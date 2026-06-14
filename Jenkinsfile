@@ -13,7 +13,7 @@ pipeline {
  
         stage ("Build Backend Container Image") {
             steps {
-                sh "docker build -t '$IMAGE:$TAG' -t '$IMAGE:latest' -f python/Dockerfile ."
+                sh "docker build -t '$IMAGE:$TAG' -t '$IMAGE:latest' -f python/Dockerfile python"
             }
         }
 
