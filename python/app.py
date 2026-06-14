@@ -4,8 +4,9 @@ app = Flask(__name__)
 @app.get("/")
 def hello():
     return jsonify(
-        message="✨ Welcome to Cloud with VarJosh ✨",
+        message="✨ Welcome to Cloud with Srinivas ✨",
         tip="Built with Flask, shipped by Jenkins, running in Docker."
+        text="You are working with Srinivas Now !!"
     )
 
 if __name__ == "__main__":
